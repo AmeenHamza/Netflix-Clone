@@ -80,7 +80,7 @@ header {
 
 .div2 {
     background:linear-gradient(to left,rgb(35, 42, 182,0.7) 50% ,rgb(189, 6, 6));
-    height: 25vh;
+    height: 26vh;
     width: 75%;
     margin: 100px 0 100px 220px;
     border-radius: 10px;
@@ -89,7 +89,7 @@ header {
 .div3 {
     background-color: rgb(0,8,29);
     width: 74.5%;
-    height: 24vh;
+    height: 25vh;
     position: absolute;
     margin: 3px 10px 10px 5px;
     border-radius: 10px;
@@ -119,7 +119,7 @@ header {
     border-radius: 10px;
     border: 0.5px solid white;
     cursor: pointer;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .input:placeholder-shown{
@@ -148,17 +148,17 @@ header {
 
 .main{
     background-color: rgb(9,6,38);
-    height: 150vh;
-    width: 90%;
-    margin:-400px 0 0 100px;
+    height: 310vh;
+    width: 92%;
+    margin:-350px 0 0 60px;
     position: relative;
     z-index: 2;
     border-radius: 20px;
 }
 
 .line{
-    width: 85%;
-    margin-left: 120px;
+    width: 90%;
+    margin-left: 100px;
     opacity: 0.2;
     background-color: grey;
 }
@@ -185,11 +185,12 @@ header {
 }
 
 .div8_para{
-        color: white;
-        text-align: center;
-        padding: 30px 10px 0 21px;
-        font-size: 25px;
-        text-align: justify;
+    color: white;
+    text-align: center;
+    padding: 30px 10px 0 21px;
+    margin-left: -20px;
+    font-size: 25px;
+    text-align: justify;
 }
 
 
@@ -205,3 +206,110 @@ header {
     height:65vh;
 }
 
+.div_10{
+    margin: 50px 0 50px 0;
+   
+}
+.div_11{
+    color: white;
+
+    left: 50%;
+    position: absolute;
+    margin: 150px 0 10px 0px;
+    width: 44%;
+}
+
+.div11_h1{
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.div11_para{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.div12{
+    margin-left: 100px;
+    width: 60%;
+}
+.div12 img{
+    width: 72%;
+}
+
+.div_13{
+    background-color:transparent;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    margin: 50px 0 50px 0;
+}
+
+.div_14{
+    width: 45%;
+    height: 10vh;
+    margin: 10px 0 0 100px;
+}
+
+.div14_h1{
+    color: white;
+    /* text-align: center; */
+    margin: -78px 80px -147px 40px;
+    font-size: 65px;
+    white-space: pre-wrap;
+}
+
+.div14_para{
+    color: white;
+    text-align: center;
+    padding: 30px 10px 0 21px;
+    margin-left: 26px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.div15{
+    position: relative;
+    width: 40%;
+    height: 45vh;
+}
+
+.div15 img{
+    margin-top: 30px;
+    padding: 24px;
+    height:65vh;
+}
+
+.div_16{
+    margin: 40px 0 40px 0;
+   
+}
+.div_17{
+    color: white;
+    left: 50%;
+    position: absolute;
+    margin: 90px 0 11px 0px;
+    width: 44%;
+}
+
+.div17_h1{
+    margin-bottom: 20px;
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.div17_para{
+    font-size: 25px;
+    margin-left: 7px;
+    font-weight: bolder;
+}
+
+.div18{
+    margin-left: 100px;
+    width: 60%;
+}
+.div18 img{
+    width: 72%;
+}
