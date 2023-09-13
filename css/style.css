@@ -7,6 +7,7 @@
 
 body{
     background-color: rgb(0,8,29);
+    overflow-x: hidden;
 }
 
 header {
@@ -39,9 +40,11 @@ header {
     border-radius: 0.25rem;
     margin-top: -25px;
     margin-right: 50px;
-    cursor: pointer;
     line-height: 1;
+}
 
+.sign_in button:hover{
+    background-color: #980b12 ;
 }
 
 .sign_in button {
@@ -52,6 +55,7 @@ header {
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 0.01px;
+    cursor: pointer;
 
 }
 
@@ -98,19 +102,18 @@ header {
 
 .para3 {
     color: white;
-    font-size: 27px;
-    margin: 40px 0 0 50px;
+    font-size: 24px;
+    margin: 10px 0 0 50px;
 }
 
 .div4 {
-    margin: 100px 0 0 60px;
+    margin: 90px 0 0 60px;
     height: 8vh;
     width: 40%;
     position: absolute;
     display: flex;
    
 }
-
 
 .input{
     padding: 20px 200px 20px 20px;
@@ -119,6 +122,7 @@ header {
     border-radius: 10px;
     border: 0.5px solid white;
     cursor: pointer;
+    margin-top: -50px;
     margin-bottom: 10px;
 }
 
@@ -128,17 +132,22 @@ header {
 
 .div5{
     background-color: red;
-    padding: 30px 200px 0 20px;
-    height: 9.4vh;
+    padding: 20px 200px 0 20px;
+    height: 11.4vh;
     width: 20%;
-    margin: 1px 200px 0 10px;
+    margin: -25px 200px 0 10px;
     border-radius: 6px;
-
-
+    cursor: pointer;
 }
 
+.div5:hover{
+    background-color: black;
+}
+
+
+
 .div5_para{
-    margin: -19px 0 0 5px;
+    margin: -20px 0 0 5px;
     padding:10px 0 0 0;
     color: white;
     font-size: 27px;
@@ -148,9 +157,9 @@ header {
 
 .main{
     background-color: rgb(9,6,38);
-    height: 310vh;
+    height: 350vh;
     width: 92%;
-    margin:-350px 0 0 60px;
+    margin:-100px 0 0 60px;
     position: relative;
     z-index: 2;
     border-radius: 20px;
@@ -158,9 +167,11 @@ header {
 
 .line{
     width: 90%;
+    height: 0.2vh;
     margin-left: 100px;
-    opacity: 0.2;
+    opacity: 0.6;
     background-color: grey;
+    z-index: 999;
 }
 
 .div7{
@@ -179,8 +190,8 @@ header {
 .div8_h1{
     color: white;
     text-align: center;
-    margin: 100px 0 0 -77px;
-    font-size: 65px;
+    margin: 10px 0 0 -10px;
+    font-size: 62px;
     white-space: nowrap;
 }
 
@@ -193,17 +204,27 @@ header {
     text-align: justify;
 }
 
+video{
+    position: absolute;
+    margin: 120px 0 0 76px;
+    width: 69%;
+    height: 32vh;
+    z-index: -1;
+}
+
 
 .div9{
     position: relative;
     width: 40%;
     height: 45vh;
+
 }
 
 .div9 img{
     margin-top: 30px;
     padding: 24px;
     height:65vh;
+   
 }
 
 .div_10{
@@ -215,7 +236,7 @@ header {
 
     left: 50%;
     position: absolute;
-    margin: 150px 0 10px 0px;
+    margin: 70px 0 10px 40px;
     width: 44%;
 }
 
@@ -248,7 +269,7 @@ header {
 }
 
 .div_14{
-    width: 45%;
+    width: 85%;
     height: 10vh;
     margin: 10px 0 0 100px;
 }
@@ -256,9 +277,10 @@ header {
 .div14_h1{
     color: white;
     /* text-align: center; */
-    margin: -78px 80px -147px 40px;
+    margin: -208px 80px -147px 40px;
     font-size: 65px;
     white-space: pre-wrap;
+    width: 100%;
 }
 
 .div14_para{
@@ -290,7 +312,7 @@ header {
     color: white;
     left: 50%;
     position: absolute;
-    margin: 90px 0 11px 0px;
+    margin: 40px 0 11px 0px;
     width: 44%;
 }
 
@@ -313,3 +335,302 @@ header {
 .div18 img{
     width: 72%;
 }
+
+
+footer{
+    /* background-color: white; */
+    height: 150vh;
+    width: 100%;
+}
+
+.accordion{
+
+    width: 80%;
+    margin: 300px 200px 100px 10%;
+    /* padding: 100px 10px; */
+
+}
+.accordion-item{
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    /* padding: 100px 100px; */
+    border: none;
+    /* width: 70%; */
+
+}
+
+.accordion-body {
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    font-size: 25px;
+}
+
+.accordion-button {
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    /* width: 100%; */
+    font-size: 25px;
+}
+
+/* Reorder the elements */
+.accordion-button::before {
+    content: "+";
+    font-size: 38px;
+    order: 2; /* Change the order to 2 to move it to the right */
+    transition: transform 0.3s;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button[aria-expanded="true"]::before {
+    content: "+";
+    transform: rotate(135deg);
+}
+
+.accordion-button.active{
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+}
+
+.frequently{
+    color: white;
+    font-size: 60px;
+    margin: 100px 0 -200px 195px;
+    font-weight: 900;
+}
+.footer-div{
+    background-color:rgb(10,8,29);
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+ 
+}
+
+.footer-div1{
+    /* background-color: black; */
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 200px 0 0 -100px;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.footer-div1 p{
+    color: white;
+    margin: 20px 0 0 180px;
+    text-decoration: underline;
+    text-align: left;
+    cursor: pointer;
+    /* white-space: nowrap; */
+}
+.Questions{
+    position: absolute;
+    color: white;
+    margin: 140px 0 0 70px;
+    text-decoration: underline;
+}
+
+.Pakistan{
+    color: white;
+    /* position: absolute; */
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    top: 78%;
+    left: 6%;
+    position: relative;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 170vh; 
+    }
+
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 70%; 
+    }
+
+    .sign_in {
+        margin-top: 20px; 
+        margin-right: 0; 
+    }
+
+    .div1 {
+        text-align: center; 
+
+        width: 60%;
+        margin: 1px 100px;
+    }
+
+    .para1 {
+        font-size: 40px; 
+        margin-left: 0; 
+    }
+
+    .para2 {
+        margin-top: -60px; 
+        margin-left: 0; 
+        font-weight: 300;
+    }
+
+    .div2 {
+        height: auto;
+        width: 90%; 
+        margin: 200px auto;
+    }
+
+    .div3 {
+        display: none;
+    }
+
+    .para3 {
+        display: none;
+    }
+
+    .div4 {
+        margin: 20px 0;
+        height: auto; 
+        width: 100%; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .input {
+        position: absolute;
+        padding: 15px 50px;
+        margin: -180px 0 0 -220px; 
+    }
+
+    .div5 {
+        text-align: center;
+        width: 70%;
+        margin-top: -100px; 
+        margin-left: 200px;
+    }
+
+
+
+    .main {
+        height: 250vh;
+        margin:0% 0 0 0%;
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .div8{
+        margin-left: 40px;
+    }
+    
+    .div8_h1 {
+        font-size: 5vw;
+    }
+
+    .div8_para {
+        font-size: 2.5vw;
+    }
+
+    .div9 img{
+        width: 48vw;
+        margin-left: -15px;
+    }
+
+    video {
+        margin: 0% 0 0 18%;
+        height: 50vh;
+        width: 27.6vw;
+    }
+
+    .div9 img {
+        height: 40vh;
+    }
+
+    .div11{
+        margin: 100px 0 0 0;
+    }
+
+    .div11_h1 {
+        font-size:4vw;
+        margin: -20px 0 30px -20px;
+    }
+
+    .div11_para {
+        font-size: 2vw;
+        margin: 10px 0 0 -20px;
+    }
+
+    .line{
+        width: 70vw;
+        margin-left: 80px;
+        background-color: grey;
+        opacity: 1;
+    }
+
+    .div12{
+        margin-left: 45px;
+    }
+
+    .div_13{
+        height:50vh;
+    }
+
+    .div14_h1 {
+        font-size: 4vw;
+        margin: 10px 0 0 -30px;
+    }
+
+    .div14_para {
+        font-size: 2.5vw;
+        margin: -40px 0 0 -50px;
+        width: 120%;
+    }
+
+    .div15 img{
+        height: 40vh;
+        margin-left:-50px;
+    }
+
+    .div17_h1 {
+        font-size: 4vw;
+    }
+    .div17_para {
+        font-size: 2.5vw;
+    }
+
+    .div18 img{
+        margin-top: 30px;
+        margin-left: -80px;
+    }
+
+
+    .frequently{
+        font-size: 25px;
+        margin-left: 80px;
+    }
+
+    .Pakistan{
+        margin-left: 50px;
+    }
+    
+}
+
